@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/btnQr" android:padding="@dimen/_8sdp" android:visibility="gone" android:layout_width="@dimen/_36sdp" android:layout_height="@dimen/_36sdp" android:tint="@color/curve_green" android:layout_alignParentStart="true" app:srcCompat="@drawable/ic_scan_qrcode"/>
+    <androidx.appcompat.widget.LinearLayoutCompat android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnClear" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/my_0dp" android:minHeight="@dimen/my_0dp" android:insetLeft="@dimen/my_0dp" android:insetRight="@dimen/my_0dp" app:icon="@android:drawable/ic_menu_close_clear_cancel" app:iconGravity="2" app:iconSize="19dp" style="@style/Widget.MaterialComponents.Button.TextButton"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnPaste" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/my_0dp" android:minHeight="@dimen/my_0dp" android:text="@string/paste" style="@style/Widget.MaterialComponents.Button.TextButton"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

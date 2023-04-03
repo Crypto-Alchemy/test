@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="24dp" android:width="24dp" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="#2a2e31" android:pathData="M12,12m-12,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0"/>
+    <path android:fillColor="#a2b6be" android:pathData="M19.16,12.33C20.541,14.722 19.722,17.779 17.33,19.16C14.939,20.541 11.881,19.722 10.5,17.33C9.119,14.939 9.939,11.881 12.33,10.5C14.722,9.119 17.779,9.939 19.16,12.33Z"/>
+    <path android:fillColor="@drawable/$ic_multicoin__0" android:pathData="M16.759,18.17C18.604,17.105 19.236,14.746 18.17,12.902C17.105,11.057 14.746,10.425 12.902,11.49C11.057,12.555 10.425,14.914 11.49,16.759C12.555,18.604 14.914,19.236 16.759,18.17ZM17.33,19.16C19.722,17.779 20.541,14.722 19.16,12.33C17.779,9.939 14.722,9.119 12.33,10.5C9.939,11.881 9.119,14.939 10.5,17.33C11.881,19.722 14.939,20.541 17.33,19.16Z" android:fillType="1"/>
+    <path android:fillColor="#71818a" android:pathData="M11.561,16.882C12.658,18.632 14.953,19.213 16.757,18.172C18.56,17.131 19.204,14.853 18.237,13.028L11.561,16.882Z" android:fillType="1"/>
+    <path android:fillColor="#00a69c" android:pathData="M13.16,6.717C14.541,9.108 13.722,12.166 11.33,13.547C8.939,14.927 5.881,14.108 4.5,11.717C3.119,9.325 3.939,6.267 6.33,4.887C8.722,3.506 11.78,4.325 13.16,6.717Z"/>
+    <path android:fillColor="@drawable/$ic_multicoin__1" android:pathData="M10.759,12.557C12.604,11.492 13.236,9.133 12.17,7.288C11.105,5.443 8.746,4.811 6.902,5.876C5.057,6.941 4.425,9.3 5.49,11.145C6.555,12.99 8.914,13.622 10.759,12.557ZM11.33,13.547C13.722,12.166 14.541,9.108 13.16,6.717C11.78,4.325 8.722,3.506 6.33,4.887C3.939,6.267 3.119,9.325 4.5,11.717C5.881,14.108 8.939,14.927 11.33,13.547Z" android:fillType="1"/>
+    <path android:fillColor="#04857e" android:pathData="M5.561,11.269C6.658,13.019 8.953,13.599 10.757,12.558C12.56,11.517 13.204,9.239 12.237,7.414L5.561,11.269Z" android:fillType="1"/>
+</vector>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.google.android.material.card.MaterialCardView android:layout_width="@dimen/my_0dp" android:layout_height="wrap_content" android:backgroundTint="@color/p3" app:cardBackgroundColor="@android:color/white" app:cardCornerRadius="@dimen/_12sdp" app:cardPreventCornerOverlap="true" app:cardUseCompatPadding="false" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintWidth_max="@dimen/_250sdp">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@+id/childWrapper" android:layout_width="match_parent" android:layout_height="wrap_content" app:divider="@drawable/divider_for_vertical" app:showDividers="middle"/>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/icon_wallet" android:id="@+id/navigation_wallet" android:title="@string/title_wallet"/>
+    <item android:icon="@drawable/icon_collection" android:id="@+id/navigation_collectibles" android:title="@string/title_collectibles"/>
+    <item android:icon="@drawable/icon_swap" android:id="@+id/navigation_swap" android:title="@string/title_swap"/>
+    <item android:icon="@drawable/icon_settings" android:id="@+id/navigation_settings" android:title="@string/title_settings"/>
+</menu>

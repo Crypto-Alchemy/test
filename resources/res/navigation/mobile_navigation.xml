@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/mobile_navigation" app:startDestination="@+id/navigation_wallet">
+    <action android:id="@+id/action_to_wallet" app:destination="@+id/navigation_wallet" app:launchSingleTop="true" app:popUpTo="@+id/navigation_wallet"/>
+    <action android:id="@+id/action_navigation_wallet_to_walletConnectFragment" app:destination="@+id/walletConnectFragment"/>
+    <action android:id="@+id/action_navigation_wallet_to_SwapMigrationFragment" app:destination="@+id/navigation_swap_migration"/>
+    <fragment android:label="@string/title_wallet" android:name="net.safemoon.androidwallet.fragments.WalletFragment" android:id="@+id/navigation_wallet">
+        <action android:id="@+id/action_navigation_wallet_to_allTokensListFragment" app:destination="@+id/allTokensListFragment"/>
+        <action android:id="@+id/action_navigation_wallet_to_ReceiveFragment" app:destination="@+id/ReceiveFragment"/>
+        <action android:id="@+id/action_navigation_wallet_to_sendFragment" app:destination="@+id/sendFragment"/>
+        <action android:id="@+id/action_navigation_wallet_to_tokenListFragment" app:destination="@+id/tokenListFragment">
+            <argument android:name="isBuy" app:argType="boolean"/>
+        </action>
+        <action android:id="@+id/action_navigation_wallet_to_myTokensListFragment" app:destination="@+id/myTokensListFragment"/>
+        <action android:id="@+id/action_navigation_wallet_to_notificationHistoryFragment" app:destination="@+id/notificationHistoryFragment"/>
+        <action android:id="@+id/action_navigation_wallet_to_transferNotificationDetailsFragment" app:destination="@+id/transferNotificationDetailsFragment">
+            <argument android:name="transactionHash" app:argType="string"/>
+            <argument android:name="isNewTransaction" app:argType="boolean"/>
+        </action>
+        <action android:id="@+id/action_navigation_wallet_to_transferHistoryFragment" app:destination="@+id/transferHistoryFragment">
+            <argument android:name="userTokenData" app:argType="net.safemoon.androidwallet.ui.displayModel.UserTokenItemDisplayModel"/>
+        </action>
+    </fragment>
+    <fragment android:label="@string/title_settings" android:name="net.safemoon.androidwallet.fragments.SettingsFragment" android:id="@+id/navigation_settings">
+        <argument android:name="isNotification" android:defaultValue="false" app:argType="boolean"/>
+        <action android:id="@+id/action_navigation_settings_to_securityFragment" app:destination="@+id/securityFragment"/>
+        <action android:id="@+id/action_navigation_settings_to_switchWalletFragment" app:destination="@+id/switchWalletFragment"/>
+        <action android:id="@+id/action_navigation_settings_to_fullScreenWebViewFragment" app:destination="@+id/fullScreenWebViewFragment">
+            <argument android:name="url" app:argType="string"/>
+            <argument android:name="withBottomPadding" android:defaultValue="true" app:argType="boolean"/>
+            <argument android:name="titleResId" app:argType="integer"/>
+        </action>
+        <action android:id="@+id/action_navigation_settings_to_termScreenWebViewFragment" app:destination="@+id/termScreenWebViewFragment">
+            <argument android:name="url" app:argType="string"/>
+            <argument android:name="withBottomPadding" android:defaultValue="true" app:argType="boolean"/>
+            <argument android:name="titleResId" app:argType="integer"/>
+        </action>
+        <action android:id="@+id/action_navigation_settings_to_notificationFragment" app:destination="@+id/notificationFragment"/>
+        <action android:id="@+id/action_navigation_settings_to_fiatListFragment" app:destination="@+id/fiatListFragment"/>
+        <action android:id="@+id/action_navigation_settings_to_dateFormatFragment" app:destination="@+id/dateFormatFragment"/>
+        <action android:id="@+id/action_navigation_settings_to_defaultLanguageFragment" app:destination="@+id/defaultLanguageFragment"/>
+        <action android:id="@+id/action_navigation_settings_to_defaultScreenFragment" app:destination="@+id/defaultScreenFragment"/>
+        <action android:id="@+id/action_navigation_settings_to_defaultAppIconFragment" app:destination="@+id/defaultAppIconFragment"/>
+        <action android:id="@+id/action_navigation_settings_to_switchWalletActivity" app:destination="@+id/switchWalletActivity"/>
+        <action android:id="@+id/action_navigation_settings_to_manageContactsFragment" app:destination="@+id/manageContactsFragment"/>
+        <action android:id="@+id/action_navigation_settings_to_walletConnectFragment" app:destination="@+id/walletConnectFragment"/>
+        <action android:id="@+id/action_navigation_settings_to_joinCommunityFragment" app:destination="@+id/joinCommunityFragment"/>
+    </fragment>
+    <fragment android:label="WalletConnectFragment" android:name="net.safemoon.androidwallet.fragments.walletconnect.WalletConnectFragment" android:id="@+id/walletConnectFragment">
+        <action android:id="@+id/action_to_walletConnectDetailFragment" app:destination="@+id/walletConnectDetailFragment">
+            <argument android:name="roomConnectedInfo" app:argType="net.safemoon.androidwallet.model.walletConnect.RoomConnectedInfo"/>
+        </action>
+    </fragment>
+    <fragment android:label="JoinCommunityFragment" android:name="net.safemoon.androidwallet.fragments.JoinCommunityFragment" android:id="@+id/joinCommunityFragment"/>
+    <fragment android:label="WalletConnectDetail" android:name="net.safemoon.androidwallet.fragments.walletconnect.WalletConnectDetailFragment" android:id="@+id/walletConnectDetailFragment"/>
+    <fragment android:label="AddContactFragment" android:name="net.safemoon.androidwallet.fragments.contact.AddContactFragment" android:id="@+id/addContactFragment">
+        <action android:id="@+id/action_addContactFragment_to_selectChainForContact" app:destination="@+id/selectChainForContact">
+            <argument android:name="selectedChain" app:argType="net.safemoon.androidwallet.model.arguments.TokenTypes"/>
+        </action>
+    </fragment>
+    <fragment android:label="Select Chain" android:name="net.safemoon.androidwallet.fragments.SelectChainFragment" android:id="@+id/selectChainForContact"/>
+    <fragment android:label="fragment_security" android:name="net.safemoon.androidwallet.fragments.SecurityFragment" android:id="@+id/securityFragment">
+        <action android:id="@+id/action_securityFragment_to_changePasswordFragment" app:destination="@+id/changePasswordFragment"/>
+    </fragment>
+    <fragment android:label="AddCustomReflectionContractFragment" android:name="net.safemoon.androidwallet.fragments.AddCustomReflectionContractFragment" android:id="@+id/addCustomReflectionContractFragment"/>
+    <fragment android:label="AllTokensListFragment" android:name="net.safemoon.androidwallet.fragments.AllTokensListFragment" android:id="@+id/allTokensListFragment">
+        <action android:id="@+id/action_allTokensListFragment_to_calculatorFragment" app:destination="@+id/calculatorFragment"/>
+        <action android:id="@+id/action_allTokensListFragment_to_reflectionsFragment" app:destination="@+id/reflectionsFragment"/>
+        <action android:id="@+id/action_allTokensListFragment_to_notificationHistoryFragment" app:destination="@+id/notificationHistoryFragment"/>
+        <action android:id="@+id/action_allTokensListFragment_to_myTokensListFragment" app:destination="@+id/myTokensListFragment"/>
+        <action android:id="@+id/action_allTokensListFragment_to_navigation_wallet" app:destination="@+id/navigation_wallet" app:launchSingleTop="true" app:popUpTo="@+id/navigation_wallet"/>
+    </fragment>
+    <fragment android:label="fragment_add_new_token" android:name="net.safemoon.androidwallet.fragments.AddNewTokenFragment" android:id="@+id/addNewTokenFragment">
+        <action android:id="@+id/action_addNewTokenFragment_to_addCustomContractFragment" app:destination="@+id/addCustomContractFragment"/>
+    </fragment>
+    <fragment android:label="fragment_chain_network" android:name="net.safemoon.androidwallet.fragments.ChainNetworkFragment" android:id="@+id/chainNetworkFragment"/>
+    <fragment android:label="fragment_send" android:name="net.safemoon.androidwallet.fragments.SendFragment" android:id="@+id/sendFragment">
+        <action android:id="@+id/action_sendFragment_to_sendtoFragment" app:destination="@+id/sendtoFragment">
+            <argument android:name="userTokenData" app:argType="net.safemoon.androidwallet.ui.displayModel.UserTokenItemDisplayModel"/>
+        </action>
+    </fragment>
+    <fragment android:label="SendtoFragment" android:name="net.safemoon.androidwallet.fragments.SendtoFragment" android:id="@+id/sendtoFragment">
+        <action android:id="@+id/action_sendtoFragment_to_sendingFragment" app:destination="@+id/sendingFragment">
+            <argument android:name="etAddress" app:argType="string"/>
+            <argument android:name="balance" app:argType="string"/>
+            <argument android:name="userTokenData" app:argType="net.safemoon.androidwallet.ui.displayModel.UserTokenItemDisplayModel"/>
+        </action>
+        <action android:id="@+id/action_sendtoFragment_to_manageContactsFragment" app:destination="@+id/manageContactsFragment"/>
+    </fragment>
+    <fragment android:label="SendingFragment" android:name="net.safemoon.androidwallet.fragments.SendingFragment" android:id="@+id/sendingFragment">
+        <action android:id="@+id/action_sendingFragment_to_transferDetailsFragmentStatus" app:destination="@+id/transferDetailsFragmentStatus" app:popUpTo="@+id/navigation_wallet">
+            <argument android:name="result" app:argType="net.safemoon.androidwallet.model.transaction.history.Result"/>
+            <argument android:name="tokenChainId" app:argType="integer"/>
+            <argument android:name="isNewTransaction" app:argType="boolean"/>
+        </action>
+    </fragment>
+    <fragment android:label="TransferDetailsFragmentStatus" android:name="net.safemoon.androidwallet.fragments.TransferDetailsFragmentStatus" android:id="@+id/transferDetailsFragmentStatus">
+        <action android:id="@+id/action_transferDetailsFragmentStatus_to_navigation_wallet" app:destination="@+id/navigation_wallet" app:launchSingleTop="true" app:popUpTo="@+id/navigation_wallet"/>
+    </fragment>
+    <fragment android:label="ReceiveFragment" android:name="net.safemoon.androidwallet.fragments.ReceiveFragment" android:id="@+id/ReceiveFragment">
+        <action android:id="@+id/action_ReceiveFragment_to_qrFragment" app:destination="@+id/qrFragment">
+            <argument android:name="tokenChainId" app:argType="integer"/>
+            <argument android:name="address" app:argType="string"/>
+        </action>
+    </fragment>
+    <fragment android:label="QrFragment" android:name="net.safemoon.androidwallet.fragments.QrFragment" android:id="@+id/qrFragment"/>
+    <fragment android:label="fragment_token_list" android:name="net.safemoon.androidwallet.fragments.TokenListFragment" android:id="@+id/tokenListFragment"/>
+    <fragment android:label="MyTokensListFragment" android:name="net.safemoon.androidwallet.fragments.MyTokensListFragment" android:id="@+id/myTokensListFragment">
+        <action android:id="@+id/action_myTokensListFragment_to_transferHistoryFragment" app:destination="@+id/transferHistoryFragment">
+            <argument android:name="userTokenData" app:argType="net.safemoon.androidwallet.ui.displayModel.UserTokenItemDisplayModel"/>
+        </action>
+        <action android:id="@+id/action_myTokensListFragment_to_addNewTokenFragment" app:destination="@+id/addNewTokenFragment"/>
+        <action android:id="@+id/action_myTokensListFragment_to_calculatorFragment" app:destination="@+id/calculatorFragment"/>
+        <action android:id="@+id/action_navigation_my_tokens_to_notificationHistoryFragment" app:destination="@+id/notificationHistoryFragment"/>
+        <action android:id="@+id/action_myTokensListFragment_to_sendFragment" app:destination="@+id/sendFragment"/>
+        <action android:id="@+id/action_myTokensListFragment_to_ReceiveFragment" app:destination="@+id/ReceiveFragment"/>
+        <action android:id="@+id/action_myTokensListFragment_to_reflectionsFragment" app:destination="@+id/reflectionsFragment"/>
+    </fragment>
+    <action android:id="@+id/action_to_calculator" app:destination="@+id/calculatorFragment"/>
+    <fragment android:label="fragment_calculator" android:name="net.safemoon.androidwallet.fragments.CalculatorFragment" android:id="@+id/calculatorFragment"/>
+    <action android:id="@+id/action_to_reflection" app:destination="@+id/reflectionsFragment" app:launchSingleTop="true" app:popUpTo="@+id/navigation_wallet"/>
+    <fragment android:label="fragment_reflections" android:name="net.safemoon.androidwallet.fragments.ReflectionsFragment" android:id="@+id/reflectionsFragment">
+        <action android:id="@+id/action_reflectionsFragment_to_addCustomReflectionContractFragment" app:destination="@+id/addCustomReflectionContractFragment">
+            <argument android:name="tokenChainId" app:argType="integer"/>
+        </action>
+        <action android:id="@+id/action_reflectionsFragment_to_reflectionsAdvanceFragment" app:destination="@+id/reflectionsAdvanceFragment">
+            <argument android:name="symbolWithType" app:argType="string"/>
+        </action>
+        <action android:id="@+id/action_reflectionsFragment_to_notificationHistoryFragment" app:destination="@+id/notificationHistoryFragment"/>
+    </fragment>
+    <fragment android:label="fragment_reflections_advance" android:name="net.safemoon.androidwallet.fragments.ReflectionsAdvanceFragment" android:id="@+id/reflectionsAdvanceFragment"/>
+    <fragment android:label="ChainNetworkReflectionFragment" android:name="net.safemoon.androidwallet.fragments.ChainNetworkReflectionFragment" android:id="@+id/chainNetworkReflectionFragment"/>
+    <fragment android:label="FullScreenWebViewFragment" android:name="net.safemoon.androidwallet.fragments.FullScreenWebViewFragment" android:id="@+id/fullScreenWebViewFragment"/>
+    <fragment android:label="TermScreenWebViewFragment" android:name="net.safemoon.androidwallet.fragments.TermScreenWebViewFragment" android:id="@+id/termScreenWebViewFragment"/>
+    <fragment android:label="NotificationFragment" android:name="net.safemoon.androidwallet.fragments.NotificationFragment" android:id="@+id/notificationFragment">
+        <action android:id="@+id/action_to_cryptoPriceAlertFragment" app:destination="@+id/cryptoPriceAlertFragment">
+            <argument android:name="token" app:argType="net.safemoon.androidwallet.model.priceAlert.PAToken"/>
+        </action>
+    </fragment>
+    <fragment android:label="fragment_fiat_list" android:name="net.safemoon.androidwallet.fragments.preference.FiatListFragment" android:id="@+id/fiatListFragment"/>
+    <fragment android:label="fragment_default_date_format" android:name="net.safemoon.androidwallet.fragments.preference.DefaultDateFormatFragment" android:id="@+id/dateFormatFragment"/>
+    <fragment android:label="fragment_default_language" android:name="net.safemoon.androidwallet.fragments.preference.DefaultLanguageFragment" android:id="@+id/defaultLanguageFragment"/>
+    <fragment android:label="fragment_default_screen" android:name="net.safemoon.androidwallet.fragments.preference.DefaultScreenFragment" android:id="@+id/defaultScreenFragment"/>
+    <fragment android:label="fragment_default_app_icon_fragment" android:name="net.safemoon.androidwallet.fragments.preference.DefaultAppIconFragment" android:id="@+id/defaultAppIconFragment"/>
+    <fragment android:label="fragment_fiat_list" android:name="net.safemoon.androidwallet.fragments.SwitchWalletFragment" android:id="@+id/switchWalletFragment"/>
+    <activity android:label="activity_switch_wallet" android:name="net.safemoon.androidwallet.activity.SwitchWalletActivity" android:id="@+id/switchWalletActivity"/>
+    <fragment android:label="ManageContactsFragment" android:name="net.safemoon.androidwallet.fragments.ManageContactsFragment" android:id="@+id/manageContactsFragment">
+        <action android:id="@+id/action_manageContactsFragment_to_editContactFragment" app:destination="@+id/editContactFragment">
+            <argument android:name="contact" app:argType="net.safemoon.androidwallet.model.contact.abstraction.IContact"/>
+        </action>
+        <action android:id="@+id/action_manageContactsFragment_to_addContactFragment" app:destination="@+id/addContactFragment"/>
+    </fragment>
+    <fragment android:label="EditContactFragment" android:name="net.safemoon.androidwallet.fragments.contact.EditContactFragment" android:id="@+id/editContactFragment">
+        <action android:id="@+id/action_editContactFragment_to_selectChainForContact" app:destination="@+id/selectChainForContact">
+            <argument android:name="selectedChain" app:argType="net.safemoon.androidwallet.model.arguments.TokenTypes"/>
+        </action>
+    </fragment>
+    <fragment android:label="fragment_transfer_history" android:name="net.safemoon.androidwallet.fragments.TransferHistoryFragment" android:id="@+id/transferHistoryFragment">
+        <action android:id="@+id/action_transferHistoryFragment_to_sendtoFragment" app:destination="@+id/sendtoFragment">
+            <argument android:name="userTokenData" app:argType="net.safemoon.androidwallet.ui.displayModel.UserTokenItemDisplayModel"/>
+        </action>
+        <action android:id="@+id/action_transferHistoryFragment_to_qrFragment" app:destination="@+id/qrFragment">
+            <argument android:name="tokenChainId" app:argType="integer"/>
+            <argument android:name="address" app:argType="string"/>
+        </action>
+        <action android:id="@+id/action_transferHistoryFragment_to_navigation_swap" app:destination="@+id/navigation_swap">
+            <argument android:name="userTokenData" app:argType="net.safemoon.androidwallet.ui.displayModel.UserTokenItemDisplayModel"/>
+        </action>
+        <action android:id="@+id/action_transferHistoryFragment_to_transferDetailsFragmentStatus" app:destination="@+id/transferDetailsFragmentStatus">
+            <argument android:name="result" app:argType="net.safemoon.androidwallet.model.transaction.history.Result"/>
+            <argument android:name="tokenChainId" app:argType="integer"/>
+            <argument android:name="isNewTransaction" app:argType="boolean"/>
+        </action>
+        <action android:id="@+id/action_transferHistoryFragment_to_cryptoPriceAlertFragment" app:destination="@+id/cryptoPriceAlertFragment">
+            <argument android:name="token" app:argType="net.safemoon.androidwallet.model.priceAlert.PAToken"/>
+        </action>
+    </fragment>
+    <dialog android:label="crypto_price_alert_fragment" android:name="net.safemoon.androidwallet.dialogs.CryptoPriceAlertFragment" android:id="@+id/cryptoPriceAlertFragment"/>
+    <fragment android:label="fragment_notification_history" android:name="net.safemoon.androidwallet.fragments.NotificationHistoryFragment" android:id="@+id/notificationHistoryFragment">
+        <action android:id="@+id/action_notificationHistoryFragment_to_transferNotificationDetailsFragment" app:destination="@+id/transferNotificationDetailsFragment">
+            <argument android:name="transactionHash" app:argType="string"/>
+            <argument android:name="isNewTransaction" app:argType="boolean"/>
+        </action>
+    </fragment>
+    <fragment android:label="fragment_transaction_notification_details" android:name="net.safemoon.androidwallet.fragments.TransferNotificationDetailsFragment" android:id="@+id/transferNotificationDetailsFragment"/>
+    <fragment android:label="@string/title_swap" android:name="net.safemoon.androidwallet.fragments.SwapFragment" android:id="@+id/navigation_swap">
+        <action android:id="@+id/action_FragmentSwap_to_ConfirmSwap" app:destination="@+id/confirmSwapTransactionFragment"/>
+        <action android:id="@+id/action_FragmentSwap_to_SwapMigrationFragment" app:destination="@+id/navigation_swap_migration"/>
+    </fragment>
+    <fragment android:name="net.safemoon.androidwallet.fragments.SwapMigrationFragment" android:id="@+id/navigation_swap_migration"/>
+    <dialog android:label="@string/cst_title" android:name="net.safemoon.androidwallet.dialogs.ConfirmSwapTransactionFragment" android:id="@+id/confirmSwapTransactionFragment">
+        <action android:id="@+id/action_confirmSwapTransactionFragment_self" app:destination="@+id/confirmSwapTransactionFragment"/>
+    </dialog>
+    <fragment android:label="ChangePasswordFragment" android:name="net.safemoon.androidwallet.fragments.ChangePasswordFragment" android:id="@+id/changePasswordFragment"/>
+    <fragment android:label="fragment_add_custom_contract" android:name="net.safemoon.androidwallet.fragments.AddCustomContractFragment" android:id="@+id/addCustomContractFragment">
+        <action android:id="@+id/action_addCustomContractFragment_to_chainNetworkFragment" app:destination="@+id/chainNetworkFragment"/>
+    </fragment>
+    <navigation android:id="@+id/navigation_collectibles" app:startDestination="@+id/navigation_collectibles_fragment">
+        <fragment android:label="@string/title_collectibles" android:name="net.safemoon.androidwallet.fragments.collectibles.CollectibleFragment" android:id="@+id/navigation_collectibles_fragment">
+            <action android:id="@+id/action_navigation_collectibles_to_collectionFragment" app:destination="@+id/collectionFragment">
+                <argument android:name="collection" app:argType="net.safemoon.androidwallet.model.collectible.RoomCollection"/>
+            </action>
+        </fragment>
+        <fragment android:name="net.safemoon.androidwallet.fragments.collectibles.CollectionsFragment" android:id="@+id/collectionFragment">
+            <action android:id="@+id/action_navigation_collectibles_to_nftDetailFragment" app:destination="@+id/nftDetailFragment">
+                <argument android:name="collection" app:argType="net.safemoon.androidwallet.model.collectible.RoomCollection"/>
+                <argument android:name="nftData" app:argType="net.safemoon.androidwallet.model.collectible.RoomNFT"/>
+            </action>
+        </fragment>
+        <fragment android:name="net.safemoon.androidwallet.fragments.collectibles.NftDetailFragment" android:id="@+id/nftDetailFragment">
+            <action android:id="@+id/action_nft_detail_to_sendto" app:destination="@+id/nftSendToFragment">
+                <argument android:name="nftData" app:argType="net.safemoon.androidwallet.model.nft.NFTData"/>
+            </action>
+        </fragment>
+        <fragment android:name="net.safemoon.androidwallet.fragments.collectibles.SendToNftFragment" android:id="@+id/nftSendToFragment">
+            <action android:id="@+id/action_nft_transfer" app:destination="@+id/nftTransfer">
+                <argument android:name="address" app:argType="string"/>
+                <argument android:name="nftData" app:argType="net.safemoon.androidwallet.model.nft.NFTData"/>
+                <argument android:name="iContact" app:argType="net.safemoon.androidwallet.model.contact.abstraction.IContact" app:nullable="true"/>
+            </action>
+            <action android:id="@+id/action_sendtoNFTFragment_to_manageContactsFragment" app:destination="@+id/manageContactsFragment"/>
+        </fragment>
+        <fragment android:name="net.safemoon.androidwallet.fragments.collectibles.TransferNftFragment" android:id="@+id/nftTransfer"/>
+    </navigation>
+</navigation>

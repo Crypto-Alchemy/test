@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="?android:attr/actionBarSize" style="?attr/bottomSheetStyle">
+    <FrameLayout android:id="@+id/wvContentParent" android:background="@drawable/bottom_sheet_dialog_background" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <WebView android:id="@+id/wvContent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_18sdp"/>
+    </FrameLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/vMockPreLoader" android:background="@drawable/bottom_sheet_dialog_background" android:layout_width="match_parent" android:layout_height="@dimen/_250sdp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/Widget.App.CircularProgressIndicator"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

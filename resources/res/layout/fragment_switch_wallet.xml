@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/p0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbarParent" layout="@layout/toolbar_with_title_and_action_on_wallets"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/layoutLinkAllWallets" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/_12sdp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbarParent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/imWalletsLink" android:padding="@dimen/_3sdp" android:layout_width="@dimen/_22sdp" android:layout_height="@dimen/_29sdp" android:layout_marginTop="@dimen/_8sdp" android:layout_marginBottom="@dimen/_8sdp" android:layout_centerVertical="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:srcCompat="@drawable/ic_wallets_link_all"/>
+        <TextView android:textColor="@color/t1" android:id="@+id/txtWalletsLink" android:layout_width="@dimen/my_0dp" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_8sdp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toEndOf="@+id/imWalletsLink" app:layout_constraintTop_toTopOf="0" style="@style/TextTokenName"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipeRefreshLayout" android:layout_width="match_parent" android:layout_height="@dimen/my_0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/layoutLinkAllWallets">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvWallets" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

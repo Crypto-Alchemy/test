@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.safemoon.androidwallet.views.ClipRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/p1" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:id="@+id/topBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:minHeight="?attr/actionBarSize">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_back" android:padding="17dp" android:layout_width="@dimen/my_0dp" android:layout_height="@dimen/my_0dp" android:src="@drawable/ic_back" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintDimensionRatio="1:1" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="@dimen/my_0dp" android:layout_below="@+id/topBar" android:layout_alignParentBottom="true">
+        <com.google.android.material.appbar.AppBarLayout android:id="@+id/appBar" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/ccToolBar" android:background="@color/p1" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:contentScrim="@color/curve_green" app:layout_scrollFlags="13">
+                <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:id="@+id/lWalletBalance" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/_15ssp" android:textColor="@color/wallet_name_color" android:id="@+id/txtSymbol" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toStartOf="@+id/tvWalletBlnc" app:layout_constraintTop_toTopOf="@+id/tvWalletBlnc"/>
+                        <TextView android:textSize="@dimen/my_25sp" android:textColor="@color/wl_balance_color" android:id="@+id/tvWalletBlnc" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+                        <TextView android:textColor="@color/wallet_name_color" android:id="@+id/tvMainWallet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Main Wallet" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tvWalletBlnc"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <TextView android:textSize="@dimen/my_15sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvSend" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/my_8sp" android:text="@string/receive"/>
+                </LinearLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <net.safemoon.androidwallet.views.ClipRecyclerView android:id="@+id/rvMyTokenList" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</net.safemoon.androidwallet.views.ClipRelativeLayout>

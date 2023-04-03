@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="@color/p3" app:cardBackgroundColor="@color/white" app:cardCornerRadius="@dimen/cardCornerRadius" app:cardElevation="@dimen/_8sdp" app:cardUseCompatPadding="true" app:contentPaddingBottom="@dimen/_5sdp" app:contentPaddingLeft="@dimen/_8sdp" app:contentPaddingRight="@dimen/_8sdp" app:contentPaddingTop="@dimen/_5sdp" app:strokeColor="@color/trans_color_shadow" app:strokeWidth="1dp">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget.MaterialComponents.Button.TextButton">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_12sdp" android:textColor="@color/t1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/token_detail_market_cap"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_10sdp" android:textColor="@color/t_grey" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/txtMarketCap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <View android:background="@color/trans_color_shadow" android:layout_width="match_parent" android:layout_height="@dimen/_1sdp"/>
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget.MaterialComponents.Button.TextButton">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_12sdp" android:textColor="@color/t1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/token_detail_volume_24_h"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_10sdp" android:textColor="@color/t_grey" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/txtVolume24h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <View android:background="@color/trans_color_shadow" android:layout_width="match_parent" android:layout_height="@dimen/_1sdp"/>
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget.MaterialComponents.Button.TextButton">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_12sdp" android:textColor="@color/t1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/token_detail_circulating_supply"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_10sdp" android:textColor="@color/t_grey" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/txtCirculatingSupply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <View android:background="@color/trans_color_shadow" android:layout_width="match_parent" android:layout_height="@dimen/_1sdp"/>
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget.MaterialComponents.Button.TextButton">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_12sdp" android:textColor="@color/t1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/token_detail_total_supply"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_10sdp" android:textColor="@color/t_grey" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/txtTotalSupply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <View android:background="@color/trans_color_shadow" android:layout_width="match_parent" android:layout_height="@dimen/_1sdp"/>
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget.MaterialComponents.Button.TextButton">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_12sdp" android:textColor="@color/t1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/token_detail_contract_address"/>
+            <com.google.android.material.textview.MaterialTextView android:textSize="@dimen/_10sdp" android:textColor="@color/t_grey" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/txtContractAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" app:drawableEndCompat="@drawable/ic_copy_small_size" app:drawableTint="@color/green"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.google.android.material.card.MaterialCardView>

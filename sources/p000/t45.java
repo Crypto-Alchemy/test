@@ -1,0 +1,50 @@
+package p000;
+
+/* renamed from: t45 */
+public final class t45 {
+    public static final int exo_controls_cc_disabled_description = 2131952084;
+    public static final int exo_controls_cc_enabled_description = 2131952085;
+    public static final int exo_controls_custom_playback_speed = 2131952086;
+    public static final int exo_controls_fastforward_description = 2131952087;
+    public static final int exo_controls_fullscreen_enter_description = 2131952088;
+    public static final int exo_controls_fullscreen_exit_description = 2131952089;
+    public static final int exo_controls_hide = 2131952090;
+    public static final int exo_controls_next_description = 2131952091;
+    public static final int exo_controls_overflow_hide_description = 2131952092;
+    public static final int exo_controls_overflow_show_description = 2131952093;
+    public static final int exo_controls_pause_description = 2131952094;
+    public static final int exo_controls_play_description = 2131952095;
+    public static final int exo_controls_playback_speed = 2131952096;
+    public static final int exo_controls_previous_description = 2131952097;
+    public static final int exo_controls_repeat_all_description = 2131952098;
+    public static final int exo_controls_repeat_off_description = 2131952099;
+    public static final int exo_controls_repeat_one_description = 2131952100;
+    public static final int exo_controls_rewind_description = 2131952101;
+    public static final int exo_controls_seek_bar_description = 2131952102;
+    public static final int exo_controls_settings_description = 2131952103;
+    public static final int exo_controls_show = 2131952104;
+    public static final int exo_controls_shuffle_off_description = 2131952105;
+    public static final int exo_controls_shuffle_on_description = 2131952106;
+    public static final int exo_controls_stop_description = 2131952107;
+    public static final int exo_controls_time_placeholder = 2131952108;
+    public static final int exo_controls_vr_description = 2131952109;
+    public static final int exo_item_list = 2131952119;
+    public static final int exo_track_bitrate = 2131952120;
+    public static final int exo_track_mono = 2131952121;
+    public static final int exo_track_resolution = 2131952122;
+    public static final int exo_track_role_alternate = 2131952123;
+    public static final int exo_track_role_closed_captions = 2131952124;
+    public static final int exo_track_role_commentary = 2131952125;
+    public static final int exo_track_role_supplementary = 2131952126;
+    public static final int exo_track_selection_auto = 2131952127;
+    public static final int exo_track_selection_none = 2131952128;
+    public static final int exo_track_selection_title_audio = 2131952129;
+    public static final int exo_track_selection_title_text = 2131952130;
+    public static final int exo_track_selection_title_video = 2131952131;
+    public static final int exo_track_stereo = 2131952132;
+    public static final int exo_track_surround = 2131952133;
+    public static final int exo_track_surround_5_point_1 = 2131952134;
+    public static final int exo_track_surround_7_point_1 = 2131952135;
+    public static final int exo_track_unknown = 2131952136;
+    public static final int status_bar_notification_info_overflow = 2131952591;
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Smart Chain",
+    "symbolWithType": "BEP_BNB",
+    "symbol": "BNB",
+    "address": "",
+    "icon": "binance",
+    "chainId": 97,
+    "decimals": 18,
+    "allowSwap": true,
+    "cmcId": 1839,
+    "cmcSlug": "bnb"
+  },
+  {
+    "name": "SafeMoon",
+    "symbolWithType": "BEP_SAFEMOON",
+    "symbol": "SAFEMOON",
+    "address": "0xDD6999Ec25948811d7c671051f5B4E44B175239e",
+    "icon": "safemoon",
+    "chainId": 97,
+    "decimals": 9,
+    "allowSwap": true,
+    "cmcId": 8757,
+    "cmcSlug": "safemoon"
+  },
+  {
+    "name": "SafeMoonV2",
+    "symbolWithType": "BEP_SAFEMOON_V2",
+    "symbol": "SFM",
+    "address": "0x409b3718F4090EBf7dAc8185a6e8336407d9d3a3",
+    "icon": "safemoon",
+    "chainId": 97,
+    "decimals": 9,
+    "allowSwap": true,
+    "cmcId": 16162,
+    "cmcSlug": "safemoon-v2"
+  }
+]

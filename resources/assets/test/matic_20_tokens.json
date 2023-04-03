@@ -1,0 +1,14 @@
+[
+  {
+    "symbolWithType": "POLYGON_MATIC",
+    "name": "Polygon",
+    "symbol": "MATIC",
+    "address": "",
+    "icon": "polygon_matic",
+    "chainId": 80001,
+    "decimals": 18,
+    "allowSwap": false,
+    "cmcId": 3890,
+    "cmcSlug": "polygon"
+  }
+]

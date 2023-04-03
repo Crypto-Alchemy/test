@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:foreground="?android:attr/selectableItemBackground" app:cardBackgroundColor="@color/card_bg_2" app:cardCornerRadius="5dp" app:contentPadding="5dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="14dp" android:textStyle="bold" android:id="@+id/nftPropertyName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/title_collectibles"/>
+        <TextView android:textSize="12dp" android:id="@+id/nftPropertyValue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/title_collectibles"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

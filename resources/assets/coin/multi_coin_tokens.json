@@ -1,0 +1,26 @@
+[
+  {
+    "symbolWithType": "MULTI_COIN_BITCOIN",
+    "name": "Bitcoin",
+    "symbol": "BTC",
+    "address": "",
+    "icon": "bitcoin",
+    "chainId": -2147483647,
+    "decimals": 8,
+    "allowSwap": false,
+    "cmcId": 1,
+    "cmcSlug": "bitcoin"
+  },
+  {
+    "symbolWithType": "MULTI_COIN_DOGE",
+    "name": "Dogecoin",
+    "symbol": "DOGE",
+    "address": "",
+    "icon": "dogecoin",
+    "chainId": -3,
+    "decimals": 8,
+    "allowSwap": false,
+    "cmcId": 74,
+    "cmcSlug": "dogecoin"
+  }
+]

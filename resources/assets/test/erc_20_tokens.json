@@ -1,0 +1,26 @@
+[
+  {
+    "symbolWithType": "ERC_ETH",
+    "name": "Ethereum",
+    "symbol": "ETH",
+    "address": "",
+    "icon": "ethereum",
+    "chainId": 3,
+    "decimals": 18,
+    "allowSwap": true,
+    "cmcId": 1027,
+    "cmcSlug": "ethereum"
+  },
+  {
+    "name": "pSafeMoon",
+    "symbolWithType": "ERC_PSAFEMOON",
+    "symbol": "PSAFEMOON",
+    "address": "0x16631e53c20fd2670027c6d53efe2642929b285c",
+    "icon": "p_safemoon",
+    "chainId": 3,
+    "decimals": 18,
+    "allowSwap": true,
+    "cmcId": 8757,
+    "cmcSlug": "safemoon"
+  }
+]

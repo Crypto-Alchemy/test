@@ -1,0 +1,30 @@
+package androidx.navigation;
+
+import android.app.Application;
+import android.content.Context;
+import androidx.lifecycle.C0726j;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Lambda;
+
+@Metadata(mo44875bv = {}, mo44876d1 = {"\u0000\b\n\u0002\u0018\u0002\n\u0002\b\u0003\u0010\u0003\u001a\u00020\u0000H\n¢\u0006\u0004\b\u0001\u0010\u0002"}, mo44877d2 = {"Landroidx/lifecycle/j;", "invoke", "()Landroidx/lifecycle/j;", "<anonymous>"}, mo44878k = 3, mo44879mv = {1, 6, 0})
+/* compiled from: NavBackStackEntry.kt */
+public final class NavBackStackEntry$defaultFactory$2 extends Lambda implements pc2<C0726j> {
+    public final /* synthetic */ NavBackStackEntry this$0;
+
+    /* JADX INFO: super call moved to the top of the method (can break code semantics) */
+    public NavBackStackEntry$defaultFactory$2(NavBackStackEntry navBackStackEntry) {
+        super(0);
+        this.this$0 = navBackStackEntry;
+    }
+
+    public final C0726j invoke() {
+        Context a = this.this$0.f5977a;
+        Application application = null;
+        Context applicationContext = a != null ? a.getApplicationContext() : null;
+        if (applicationContext instanceof Application) {
+            application = (Application) applicationContext;
+        }
+        NavBackStackEntry navBackStackEntry = this.this$0;
+        return new C0726j(application, navBackStackEntry, navBackStackEntry.mo8421d());
+    }
+}

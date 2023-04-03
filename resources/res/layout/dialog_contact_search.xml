@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="@dimen/default_view_padding_marin" android:paddingTop="@dimen/default_view_padding_marin" android:paddingRight="@dimen/default_view_padding_marin" android:paddingBottom="@dimen/default_view_padding_marin" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/default_view_padding_marin" android:paddingVertical="@dimen/default_view_padding_marin">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/btn_light_green" app:cardCornerRadius="@dimen/default_corner_radius" app:cardElevation="8dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

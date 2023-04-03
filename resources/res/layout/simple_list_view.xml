@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/p0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/includeTopBar" app:layout_constraintTop_toTopOf="0" layout="@layout/simple_toolbar_with_title"/>
+    <include android:id="@+id/searchBar" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_30sdp" android:layout_marginTop="@dimen/_12sdp" android:layout_marginRight="@dimen/_30sdp" android:layout_marginHorizontal="@dimen/_30sdp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/includeTopBar" layout="@layout/search_bar"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/listView" android:paddingBottom="?attr/actionBarSize" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/searchBar"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

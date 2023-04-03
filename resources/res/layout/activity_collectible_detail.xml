@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@color/p1" android:layout_width="match_parent" android:layout_height="@dimen/collectible_action_bar_height">
+        <RelativeLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/btnBack" android:padding="@dimen/toolbar_back_button_padding" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_back" android:tint="@color/t_all_light"/>
+            <TextView android:textSize="22dp" android:textStyle="bold" android:textColor="@color/t_all_light" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_collections" android:layout_centerInParent="true"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/btnOpen" android:padding="@dimen/toolbar_back_button_padding" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?attr/actionBarItemBackground" android:src="@drawable/ic_info_1" android:tint="@color/t_all_light" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <include layout="@layout/view_detail_nfc"/>
+</LinearLayout>

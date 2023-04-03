@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/cv_item_container" android:layout_width="@dimen/my_120dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/my_5dp" android:layout_marginBottom="@dimen/my_5dp" android:foreground="?android:attr/selectableItemBackground" android:layout_marginEnd="@dimen/my_5dp" app:cardBackgroundColor="@color/card_bg_1" app:cardCornerRadius="@dimen/my_15dp" app:contentPadding="@dimen/my_10dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/img" android:layout_width="@dimen/my_30dp" android:layout_height="@dimen/my_30dp"/>
+        <TextView android:textColor="@color/t1" android:ellipsize="marquee" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/my_8dp" android:singleLine="true" style="@style/TextTokenName"/>
+        <TextView android:textSize="@dimen/my_10dp" android:textColor="@android:color/darker_gray" android:ellipsize="marquee" android:id="@+id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00.00" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/my_22dp" android:textStyle="bold" android:textColor="@android:color/black" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$00.00"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/IvPercent" android:layout_width="@dimen/my_10dp" android:layout_height="@dimen/my_5dp"/>
+            <TextView android:textColor="@color/t1" android:id="@+id/percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/my_5dp" android:text="0.00%"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:adjustViewBounds="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/akt_default_margin_horizontal" android:layout_marginRight="@dimen/akt_default_margin_horizontal" android:layout_marginHorizontal="@dimen/akt_default_margin_horizontal" app:layout_constraintTop_toTopOf="0">
+        <include android:id="@+id/layoutSafeMoonBrand" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_64sdp" layout="@layout/include_safemoon_brand"/>
+        <TextView android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_30sdp" android:text="@string/akt_select_language_header" style="@style/AktInputTextHeader"/>
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@+id/layoutLanguage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_11ssp" android:textColor="@color/akt_register_guide_title" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/tvSelectLanguage" android:layout_width="wrap_content" android:layout_height="@dimen/_25sdp" android:layout_marginTop="@dimen/my_2dp" android:fontFamily="@font/proxima_nova_bold"/>
+            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/imgSelectLanguage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_akt_arrow" android:layout_marginEnd="@dimen/_8sdp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <View android:layout_width="match_parent" style="@style/AKtInputUnderline"/>
+        <TextView android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_30sdp" android:text="@string/akt_select_currency_header" style="@style/AktInputTextHeader"/>
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@+id/layoutCurrency" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_11ssp" android:textColor="@color/akt_register_guide_title" android:gravity="center_vertical" android:id="@+id/tvSelectCurrency" android:layout_width="wrap_content" android:layout_height="@dimen/_25sdp" android:layout_marginTop="@dimen/my_2dp" android:fontFamily="@font/proxima_nova_bold"/>
+            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/imgSelectCurrency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_akt_arrow" android:layout_marginEnd="@dimen/_8sdp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <View android:layout_width="match_parent" style="@style/AKtInputUnderline"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnContinue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_28sdp" android:text="@string/action_continue" app:backgroundTint="@color/akt_button_active" style="@style/AktActiveButton"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>
